@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar PDF</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="/Users/joel/SMARTFIX PAGE/images/alencastre-logo.png" alt="New Logo" class="new-logo">
+                <h1>Astoria & Alencastre Engineering</h1>
+                
+            </div>
+            <div class="certification">
+                <div class="text">
+                    <p>Services and Technology<br>Electronic Laboratory</p>
+                <div class="certified">
+                        <img src="/Users/joel/SMARTFIX PAGE/images/apple-logo.png" alt="Apple Logo">
+                        <p>Certified Apple Product Professional</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h2>Folio: <span class="folio" id="folioNumber">SFC900</span></h2>
+            <h3>SmartFix Servicio Tecnico Mac</h3>
+            <h1>Generar Orden de Servicio</h1>
+            <form>
+                <div class="form-group">
+                    <label for="clientName">Nombre del cliente:</label>
+                    <input type="text" id="clientName" placeholder="Nombre del cliente">
+                </div>
+                <div class="form-group">
+                    <label for="serviceType">Tipo de servicio:</label>
+                    <select id="serviceType">
+                        <option value="diagnostico">Diagnóstico</option>
+                        <option value="reparacion">Reparación</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="deviceClass">Clase de dispositivo:</label>
+                    <select id="deviceClass">
+                        <option value="celular">Celular</option>
+                        <option value="computadora">Computadora</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="deviceModel">Modelo:</label>
+                    <select id="deviceModel">
+                        <option value="iPhone">iPhone</option>
+                        <option value="iPad">iPad</option>
+                        <option value="Macbook">Macbook</option>
+                        <option value="Macbook Pro">Macbook Pro</option>
+                        <option value="Macbook Air">Macbook Air</option>
+                        <option value="iMac">iMac</option>
+                        <option value="Mac">Mac</option>
+                        <option value="Mac">Android</option>
+                        <option value="Mac">Huawei</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="brand">Marca:</label>
+                    <input type="text" id="brand" placeholder="Marca del dispositivo">
+                </div>
+                <div class="form-group">
+                    <label for="brand">Sub Modelo:</label>
+                    <input type="text" id="brand" placeholder="SI ES ANDROID O CUALQUIER OTRO">
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="serialNumber">Número de serie:</label>
+                    <input type="text" id="serialNumber" placeholder="Número de serie">
+                </div>
+                <div class="form-group">
+                    <label for="repairLevel">Estado u Observaciones Fisicas:</label>
+                    <input type="text" id="repairLevel" placeholder="Muestrale al cliente en que estado se encuentra">
+                </div>
+                <div class="form-group">
+                    <label for="entryDate">Fecha de entrada:</label>
+                    <input type="date" id="entryDate">
+                </div>
+                <div class="form-group">
+                    <label for="exitDate">Fecha de salida Tentativa:</label>
+                    <input type="date" id="exitDate">
+                </div>
+                <div class="form-group">
+                    <label for="price">Precio de la reparación:</label>
+                    <input type="text" id="price" placeholder="Precio de la reparación">
+                </div>
+                <div class="form-group">
+                    <label for="paymentType">Pago:</label>
+                    <select id="paymentType">
+                        <option value="efectivo">Efectivo</option>
+                        <option value="transferencia">Transferencia</option>
+                        <option value="tarjeta">Tarjeta</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="contract">
+                    <p>Contrato de adhesión: IMPORTANTE. Equipos con abandono mayor a 30 días naturales serán destruidos sin responsabilidad para SmartFix, El Tecnico ni el Dueño y bajo ninguna circunstancia Legal. La revisión tiene un costo de $200 por diagnóstico y uso del laboratorio. Equipos mojados o apagados no tienen garantía. No nos hacemos responsables por información perdida. No almacenamos equipos abandonados,nos recervamos a mandar avisos para recoger equipos. es obligacion del cliente recoger su equipo de inmediato pagando antes los gastos que esto genere.</p>
+                </div>
+                <div class="signature">
+                    <p>Firma del cliente de conformidad:</p>
+                    <div class="signature-line"></div>
+                </div>
+                <div class="btn-container">
+                    <button type="button" id="generatePdf" class="btn">Generar PDF</button>
+                    <button type="button" id="printPage" class="btn">Imprimir</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
