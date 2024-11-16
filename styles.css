@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-logo {
+    display: block; /* Asegura que el logo se muestre como un bloque */
+    margin: 0 auto 10px; /* Centra el logo horizontalmente y añade un margen inferior */
+    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.certification {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    justify-content: flex-end; /* Alinea los elementos al final horizontalmente */
+    margin-bottom: 20px;
+    text-align: right; /* Alinea el texto dentro del contenedor a la derecha */
+}
+
+.certification .text p:first-child {
+    font-weight: bold; /* Aplica negrita al texto */
+    color: rgb(1, 35, 103); /* Cambia el color del texto a azul índigo */
+}
+
+.certification img {
+    width: 5%; /* Ajusta el ancho al 5% del tamaño original */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 20px;
+    color: #0056b3;
+}
+
+#folioNumber {
+    color: red; /* Cambia el color del texto a rojo */
+} 
+.header p {
+    font-size: 12px;
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contract {
+    font-size: 8px; /* Tamaño de letra muy pequeño */
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.signature {
+    margin-top: 40px; /* Aumenta el espacio superior */
+    font-size: 12px;
+    color: #333;
+}
+
+.signature-line {
+    border-bottom: 1px solid #000;
+    width: 300px; /* Ajusta el ancho de la línea según sea necesario */
+    margin-top: 10px; /* Aumenta el espacio entre el texto y la línea */
+    margin-bottom: 30px; /* Añade espacio inferior para separar de los botones */
+}
+
+.btn-container {
+    display: flex;
+    justify-content: left; /* Centra los botones en el contenedor */
+    margin-top: 40px; /* Mantén el espacio superior si es necesario */
+}
+
+.btn-container button {
+    width: 24%; /* Mantén el ancho reducido */
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 10px; /* Añade un margen derecho para separar los botones */
+}
+
+.btn-container button:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último botón */
+}
+
+footer .logos {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+footer .logos img {
+    height: 50px;
+    margin-left: 10px;
+}
